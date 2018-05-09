@@ -1,0 +1,190 @@
+html{
+  font-size: 16px;
+}
+@media screen and (min-width: 769px) and (max-width: 1920px) {
+  html{
+    font-size: 43.69px !important;
+  }
+  .apply_detail{
+    width: 640px !important;
+    margin: 0 auto !important;
+    .detail_content{
+      top: 50%;
+      margin-top: -5.9rem;
+    }
+  }
+}
+
+.apply_detail{
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  background: url("../../static/image/innertest_bg.png") 0 0 no-repeat;
+  background-size: 100% 100%;
+  .detail_content{
+    position: absolute;
+    width: 7.1rem;
+    height: 11.8rem;
+    background-color: #fff;
+    left: 50%;
+    margin-left: -3.55rem;
+    bottom: 0;
+    border-top-left-radius: .3rem;
+    border-top-right-radius: .3rem;
+    .detail_content_title{
+      width: 100%;
+      height: .64rem;
+      text-align: center;
+      line-height: .64rem;
+      font-size: .4rem;
+      //padding-top: ;
+      margin-top: .28rem;
+    }
+    .detail_content_title_describe{
+      width: 100%;
+      height: .46rem;
+      text-align: center;
+      line-height: .46rem;
+      font-size: .28rem;
+    }
+    .form_message{
+      padding-top: .28rem;
+      .message_line{
+        position: relative;
+        width: 100%;
+        height: .85rem;
+        margin: .15rem 0;
+        .message_common{
+          float: left;
+          width: 5.8rem;
+          height: .85rem;
+          margin: 0 .65rem;
+          border: none;
+          outline: none;
+          border-radius: .45rem;
+          background: #f9f9f9;
+          font-size: .28rem;
+          padding: 0 .6rem;
+        }
+        .verification{
+          padding: 0 1.35rem 0 .6rem;
+        }
+        .get_verification{
+          position: absolute;
+          display: inline-block;
+          width: 1.35rem;
+          height: .4rem;
+          line-height: .4rem;
+          text-align: center;
+          font-size: .3rem;
+          right: .65rem;
+          top: 50%;
+          margin-top: -.2rem;
+          border-left: 1px solid #d8d8d8;
+          color: #ffa107;
+          cursor: pointer;
+        }
+        .code_time{
+          color: lightgray;
+        }
+        .icon_required{
+          position: absolute;
+          display: inline-block;
+          width: .2rem;
+          height: .2rem;
+          font-size: .28rem;
+          color: red;
+          left: .9rem;
+          top: .325rem;
+        }
+        .icon_down{
+          position: absolute;
+          display: inline-block;
+          width: .32rem;
+          height: .2rem;
+          right: .9rem;
+          top: .325rem;
+          background: url("../../static/image/icon_down.png") center center no-repeat;
+          background-size: 100%;
+        }
+      }
+
+    }
+    .btn_commit_no{
+      position: absolute;
+      width: 5.82rem;
+      height: .94rem;
+      text-align: center;
+      line-height: .94rem;
+      font-size: .3rem;
+      border-radius: .45rem;
+      color: #999999;
+      background-color: #eaeaea;
+      left: 50%;
+      margin-left: -2.91rem;
+      bottom: .24rem;
+    }
+    .btn_commit_active{
+      background-color: #41b5ff;
+      color: #fff;
+      cursor: pointer;
+    }
+  //  弹框样式开始
+    .commitShow{
+      width:100%;
+      height:100%;
+      position:fixed;
+      top:0;
+      left:0;
+      z-index:120;
+      background:rgba(77,82,113,0.8);
+      .commit_content{
+        position: absolute;
+        width: 5.4rem;
+        height: 4rem;
+        background-color: #fff;
+        border-radius: .2rem;
+        left: 50%;
+        top: 50%;
+        margin: -2rem -2.7rem;
+        .header{
+          width: 100%;
+          height: .6rem;
+          line-height: .6rem;
+          margin: .28rem 0 .14rem;
+          font-size: .4rem;
+          text-align: center;
+        }
+        .content{
+          width:100%;
+          font-size: .3rem;
+          line-height: 1.6;
+          padding: 0 .45rem;
+        }
+        .btn_select{
+          position: absolute;
+          width: 100%;
+          height: 1rem;
+          display: flex;
+          left: 0;
+          bottom: 0;
+          div{
+            flex: 1;
+            font-size: .4rem;
+            text-align: center;
+            line-height: 1rem;
+            border-top: 1px solid #cccccc;
+          }
+          div:nth-child(1){
+            color: #333333;
+          }
+          div:nth-child(2){
+            color: #0087fb;
+            border-left: 1px solid #cccccc;
+          }
+        }
+      }
+    }
+  //  弹框样式结束
+  }
+}

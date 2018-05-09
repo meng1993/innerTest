@@ -1,0 +1,59 @@
+html{
+  font-size: 16px;
+}
+@media screen and (min-width: 769px) and (max-width: 1920px) {
+  html{
+    font-size: 43.69px !important;
+  }
+ .apply_index{
+   width: 640px !important;
+   margin: 0 auto !important;
+   //.btn_apply{
+   //  bottom: 4.5rem !important;
+   //}
+   .btn_apply{
+     bottom: 2.9rem !important;
+   }
+   .btn_look{
+     bottom: 1.3rem !important;
+   }
+ }
+}
+
+
+.apply_index{
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  background: url("../../static/image/innertest_bg.png") 0 0 no-repeat;
+  background-size: 100% 100%;
+  .describe{
+    position: absolute;
+    width: 5.6rem;
+    height: 2rem;
+    left: 50%;
+    margin-left: -2.8rem;
+    bottom: 7.7rem;
+  }
+  .btn_common{
+    position: absolute;
+    width: 5.64rem;
+    height: 1rem;
+    background-color: #fff;
+    color: #41b5ff;
+    font-size: .36rem;
+    text-align: center;
+    line-height: 1rem;
+    border-radius: .5rem;
+    letter-spacing: .04rem;
+    left: 50%;
+    margin-left: -2.82rem;
+    cursor: pointer;
+  }
+  .btn_apply{
+    bottom: 2.9rem;
+  }
+  .btn_phone{
+    bottom: 1.3rem;
+  }
+}
